@@ -137,8 +137,7 @@ the config.json have a "tlesources" to get something from URL link, we can chang
 
 and if we go strict to /tmp we can retrieve the root flag. 
 
-
-
+rooted with Disturbante(https://github.com/Disturbante).
 
 
 
