@@ -10,3 +10,5 @@ Writeups of different machines with several difficulties
 [topology](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/topology.md)(easy)
 
 [sau](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/sau.md)(easy)
+
+[Forest](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/Forest.md)(easy)
