@@ -11,8 +11,10 @@ Writeups of different machines with several difficulties
 
 [sau](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/sau.md)(easy)
 
-[Forest](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/Forest.md)(easy)
+[forest](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/Forest.md)(easy)
 
 [keeper](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/keeper.md)(easy)
 
 [napper](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/napper.md)(hard)
+
+[hospital](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/hospital/hospital.md)(medium)
