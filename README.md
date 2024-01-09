@@ -18,3 +18,4 @@ __Writeups are ordered from oldest to newest, most likely older ones may be inco
 |     8     |        [Keeper](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/keeper.md)       |   Linux  |       Easy       |
 |     9     |        [Napper](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/napper.md)       |  Windows |       Hard       |
 |     10    | [Hospital](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/hospital/hospital.md) |  Windows |      Medium      |
+|     11    | [Broker](https://github.com/AleHelp/Writeups-Hackthebox/blob/main/Broker.md)              |  Linux   |      Easy        |
