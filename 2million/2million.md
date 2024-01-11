@@ -239,6 +239,6 @@ then:
 chmod 600 id_rsa
 ssh -i id_rsa admin@10.10.11.221
 ```
-> Here I found out the mail
+> Here I found out the previous mail by log in via SSh
 
 So we return in the fist terminal we run this command __"./fuse ./ovlcap/lower ./gc"__ and in the second terminale __"./exp"__, we're root and we can submit the last flag in /root.
